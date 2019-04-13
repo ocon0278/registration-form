@@ -21,23 +21,23 @@
 
           <div class="grid">
             <div class="unit xs-1 s-1 m-1 l-1-2 push pad-right">
-              <label>Name</label>
-              <input>
+              <label for="name">Name</label>
+              <input id="name" name="name" required>
             </div>
 
             <div class="unit xs-1 s-1 m-1 l-1-2 push pad-left">
-              <label>Age</label>
-              <input>
+              <label for="age">Age</label>
+              <input id="age" name="age" required>
             </div>
 
             <div class="unit xs-1 s-1 m-1 l-1-2 push pad-right">
-              <label>Email</label>
-              <input>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
             </div>
 
             <div class="unit xs-1 s-1 m-1 l-1-2 push pad-left">
-              <label>Physical fitness</label>
-              <select>
+              <label for="fitness">Physical fitness</label>
+              <select id="fitness" name="fitness">
                 <option>Super-human</option>
                 <option>Fit as a fiddle</option>
                 <option>Not terribly strong</option>
@@ -46,22 +46,22 @@
             </div>
           </div>
 
-          <div>
-            <label>Address</label>
-            <textarea></textarea>
+          <div class="push-0">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
           </div>
         </fieldset>
 
         <fieldset class="push-3-4">
           <legend class="push-3-4 italic giga">Mission statement</legend>
 
-          <label>Why do you want to go to Mars?</label>
-          <textarea></textarea>
+          <label for="details">Why do you want to go to Mars?</label>
+          <textarea id="details" name="message" required></textarea>
         </fieldset>
 
-        <div>
-          <button>Register for the trip!</button>
-          <input>
+        <div class="center-content">
+          <button class="btn bold" type="submit">Register for the trip!</button>
+          <input type="hidden" name="_subject" value="Request to join the mission">
         </div>
       </form>
     </div>
