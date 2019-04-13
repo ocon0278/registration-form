@@ -6,14 +6,26 @@ h1 {
   border-bottom: 1px solid #000;
 }
 
-@@media only screen and (min-width: 60em) {
+body {
+  background-color: #f2f2f2;
+}
+
+section {
+  background-color: #fff;
+}
+
+legend {
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 60em) {
 
   .pad-left {
-    padding-left: .5rem
+    padding-left: .5rem;
   }
 
   .pad-right {
-    padding-right: .5rem
+    padding-right: .5rem;
   }
 
 }
